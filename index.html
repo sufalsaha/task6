@@ -229,17 +229,17 @@
       let menuopen = document.querySelector(".menu");
       let menucloge = document.querySelector(".menu-cansel");
       let menulist = document.querySelector(".modile-area");
-      menulist.style.display = "none";
+      menulist.style.top = "-700px";
       menuopen.style.display = "block";
       menucloge.style.display = "none";
 
       function togglemenu() {
-        if (menulist.style.display == "none") {
-          menulist.style.display = "block";
+        if (menulist.style.top == "-700px") {
+          menulist.style.top = "80px";
           menuopen.style.display = "none";
           menucloge.style.display = "block";
         } else {
-          menulist.style.display = "none";
+          menulist.style.top = "-700px";
           menuopen.style.display = "block";
           menucloge.style.display = "none";
         }

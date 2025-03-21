@@ -15,7 +15,7 @@ img {
   background-color: #fff;
   position: fixed;
   width: 100%;
-  box-shadow: #7a7676;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 1;
 }
 .logo {
@@ -27,21 +27,21 @@ img {
 .menu {
   display: block;
   cursor: pointer;
+  transition: all 0.4s;
 }
 .menu-cansel {
   display: none;
   cursor: pointer;
+  transition: all 0.4s;
 }
 .modile-area {
-  display: none;
+  /* display: block; */
   position: absolute;
-  top: 70px;
+  top: -700px;
   width: 100%;
-  /* z-index: -1; */
+  transition: all 0.4s;
 }
 .mobile-navber {
-  /* top: 70px;
-  left: 0px; */
   background: #ffffff;
   margin: 0 auto;
   width: 70%;
@@ -51,7 +51,6 @@ img {
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* z-index: -44; */
 }
 .mobile-navber ul {
   display: flex;
@@ -96,12 +95,13 @@ img {
   display: none;
 }
 .nav-button button {
+  /* position: relative; */
   font-size: 1.2rem;
   text-align: center;
   color: #fff;
   background-color: hsl(192, 70%, 51%);
   border: none;
-  padding: 12px 24px;
+  padding: 10px 20px;
   border-radius: 50px;
 }
 
@@ -385,7 +385,7 @@ img {
   }
   .hero-titel {
     margin-top: 80px;
-    padding: 0px 40px;
+    padding: 0px 0 0 40px;
     width: 50%;
     display: flex;
     align-items: start;
@@ -451,6 +451,12 @@ img {
   .modile-area {
     display: none;
   }
+  /* .menu-cansel {
+    display: none;
+  }
+  .menu {
+    display: none;
+  } */
   .nav-button {
     display: block;
   }
@@ -459,7 +465,7 @@ img {
   }
   .hero-titel {
     margin-top: 50px;
-    padding: 0px 70px;
+    padding: 0px 0 0 70px;
   }
   .hero-titel h2 {
     font-size: 3rem;
